@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <title>Covid-19 |website</title>
 </head>
-<body class="bg-green-800 sm:overflow-hidden">
-<nav class="sm:w-full h-12 bg-gray-300">
+<body class="bg-gray-800 sm:overflow-scroll">
+<nav class="w-full h-12 bg-gray-300">
 </nav>
 <header></header>
 <section  class="relative">
-   
     <div id="input" class="flex justify-center p-4 mt-10">
-        <input class="bg-white focus:outline-none border border-gray-300 py-2 px-4 block w-60 appearance-none leading-normal h-10" type="text" placeholder="Enter State">
-        <button class="bg-blue-500 outline-none hover:bg-blue-700 text-white font-bold py-2 px-4 h-10"> generate </button>   
+    <input class="bg-white focus:outline-none border border-gray-300 py-2 px-4 block w-60 appearance-none leading-normal h-10" type="text" placeholder="Enter State">
+    <button class="bg-blue-500 outline-none hover:bg-blue-700 text-white font-bold py-2 px-4 h-10"> generate </button>   
     </div>
+    <div class="w-full overflow-scroll">   
     <table class="m-auto">
     <thead class="md:text-2xl font-bold capitalize text-white text-center">
         <td class="bg-pink-500 px-3" draggable="true">sl.no</td>
@@ -29,9 +29,8 @@
     <tbody id="tablebody" class="text-md font-bold text-center">
     </tbody>
 </table>
-
-
+</div>
 </section>
-   
+<script src="index.js"></script>    
 </body>
 </html>
