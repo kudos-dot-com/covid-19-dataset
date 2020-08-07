@@ -22,7 +22,7 @@ document.querySelector('#input input').addEventListener("keyup",()=>{
     let  table=body.querySelectorAll('tr');
  
         dataVal.forEach((pos,index)=>{
-        if((getch.value.trim()===pos.loc.toLowerCase().substring(0,getch.value.length).trim()))
+        if((getch.value.toLowerCase().trim()===pos.loc.toLowerCase().substring(0,getch.value.length).trim()))
         {
            table[index].style.display='';
         }
