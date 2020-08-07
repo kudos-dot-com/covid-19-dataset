@@ -2,16 +2,16 @@
     padding:0;
     margin:0;
 }
-#tablebody tr:nth-child(odd)
+#tablebody tr:nth-child(odd),#tablebody1 tr:nth-child(odd)
 {
     background-color:  #edf2f7;;
 }
-#tablebody tr:nth-child(even)
+#tablebody tr:nth-child(even),#tablebody1 tr:nth-child(even)
 {
     background-color:#95a5a6; 
     /*#a0aec0;*/
 }
-#tablebody td
+#tablebody td,#tablebody1 td
 {
     margin: 5px;
    border: 1px solid #2c3e50;
@@ -23,4 +23,22 @@ thead td{
 }
 input:focus{
     border: 2px solid;
+}
+#state-show,#world-show{
+    border-radius: 20px;
+}
+#logo {
+    transform: rotateZ(0deg);
+    
+    animation: round 2s infinite linear;
+
+}
+#nav2{
+    transition: 1.2s;
+    left:-400px;
+}
+@keyframes round{
+    to{
+        transform: rotateZ(360deg);
+    }
 }
