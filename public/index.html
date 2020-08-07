@@ -9,22 +9,30 @@
 </head>
 <body class="bg-gray-800 sm:overflow-scroll">
 <nav class="w-full h-12 bg-gray-300">
+    <ul class="font-semibold capitalize text-black text-md hidden md:block">
+        <li class="float-right px-3  py-2">contacts</li>
+        <li class="float-right px-3  py-2">statistics</li>
+        <li class="float-right px-3  py-2">prevention</li>
+        <li class="float-right px-3  py-2">home</li>
+    </ul>  
 </nav>
-<header></header>
-<section  class="relative">
-    <div id="input" class="flex justify-center p-4 mt-10">
-    <input class="bg-white focus:outline-none border border-gray-300 py-2 px-4 block w-60 appearance-none leading-normal h-10" type="text" placeholder="Enter State">
+<header>
+  
+</header>
+<section  class="relative bg-gray-400 md:bg-transparent">
+    <div id="input" class="flex justify-center p-4 mt-10 ">
+    <input class="bg-white focus:outline-none focus:border-blue-500 focus:border-2 border border-gray-300 py-2 px-4 block w-60 appearance-none leading-normal h-10" type="text" placeholder="Enter State">
     <button class="bg-blue-500 outline-none hover:bg-blue-700 text-white font-bold py-2 px-4 h-10"> generate </button>   
     </div>
-    <div class="w-full overflow-auto">   
+    <div class="w-full overflow-auto bg-gray-400 md:bg-transparent">   
     <table class="m-auto">
     <thead class="md:text-2xl font-bold capitalize text-white text-center">
-        <td class="bg-pink-500 px-3" draggable="true">sl.no</td>
-        <td class="bg-yellow-500" draggable="true">states</td>
-        <td class="bg-red-500" draggable="true">foreign cases</td>
-        <td class="bg-blue-500 px-3" draggable="true">recovered</td>
-        <td class="bg-green-500 px-3" draggable="true">deaths</td>
-        <td  class="bg-teal-500 px-3" draggable="true">total cases</td>
+        <td class="text-white text-black px-3 " draggable="true">sl.no</td>
+        <td class="text-white " draggable="true">states</td>
+        <td class=" text-white" draggable="true">foreign cases</td>
+        <td class=" text-white px-3" draggable="true">recovered</td>
+        <td class=" text-white px-3" draggable="true">deaths</td>
+        <td  class=" text-white px-3 border-b-2" draggable="true">total cases</td>
     </thead>
     <tbody id="tablebody" class="text-md font-bold text-center">
     </tbody>
