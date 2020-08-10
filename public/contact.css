@@ -1,0 +1,61 @@
+/* CSS VARIABLES */
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 2px 3px 10px rgba(240,255,240,0.8);
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--dark);
+}
+
+.box{
+    background: var(--primary);
+    height: 440px;
+    width: 360px;
+    margin: 5rem auto;
+ 
+    box-shadow: var(--shadow);
+}
+
+.box h1{
+    text-align: center;
+    color: var(--dark);
+    padding: 10px;
+    background: grey;
+    color: var(--light);
+}
+
+ul{
+    list-style: none;
+    padding: 10px;
+    margin: 10px;
+}
+.col{
+    display: flex;
+}
+img{
+    border-radius: 50%;
+}
+
+
+li{
+    text-align: center;
+    padding: 5px;
+}
+
+#home{
+    text-align: center;
+    margin: auto;
+  padding-bottom: 10px;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}

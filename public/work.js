@@ -1,31 +1,20 @@
 
-function getId(id,id1){
+function getId(id,id1,count){
 document.querySelector(id).style.display='none';
-document.querySelector(`${id1} img:last-child`).style.visibility="hidden";
+document.querySelector(`${id1} img:last-child`).style.display="none";
 
 
-document.querySelector(id1).addEventListener('click',()=>{
-    if(x%2==0)
-    {
-     document.querySelector(id).style.display='none';
-     document.querySelector(`${id1} img:first-child`).style.visibility="visible";
-    document.querySelector(`${id1} img:last-child`).style.visibility="hidden";
-        x++;
+$(document).ready(function(){
+    $(id1).click(function(){
+      $(id).toggle();
+      $(id1 + " "+"img:first-child").toggle();
+      $(id1 + " "+"img:last-child").toggle();
+    });
+  });
 }
-    else
-    {
-    document.querySelector(id).style.display='block';
-
-    document.querySelector(`${id1} img:first-child`).style.visibility="hidden";
-    document.querySelector(`${id1} img:last-child`).style.visibility="visible";
-    x++;
-}
-    
-    console.log(x);
-});
-}
-getId('#state','#state-show',x=1);
-getId('#world','#world-show',x=1);
+getId('#state','#state-show');
+getId('#world','#world-show');
+getId('#compare','#compare-states');
 cout=1;
 
     document.querySelector("#on").addEventListener('click',()=>{
@@ -37,3 +26,16 @@ else
 document.querySelector("#nav2").style.left='0px';
 }cout++;
 });
+document.querySelector("#off").addEventListener('click',()=>{
+document.querySelector("#nav2").style.left='-400px';
+console.log(1);
+cout++;
+});
+
+window.onload=function(){
+    $(document).ready(function(){
+        $('#covid').fadeIn(2000);
+        $('#records').fadeIn(4000);
+
+    });
+}

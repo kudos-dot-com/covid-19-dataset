@@ -6,13 +6,14 @@
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Covid-19 |website</title>
 </head>
-<body class="md:bg-gray-800 sm:overflow-scroll">
-    <nav class="w-full h-12 bg-blue-300 flex justify-between top-0 z-10 md:bg-gray-300">
+<body class=" sm:overflow-scroll">
+    <nav class="w-full h-12 bg-blue-300 flex justify-between top-0 z-10 fixed md:bg-gray-300">
    <div id="head" class="flex text-gray-800 ml-1 font-bold md:pl-8 "><h1 class="flex text-2xl mt-2 font-semibold capitalize">live-stats| </h1><h1 class="font-semibold text-2xl mt-2 uppercase">  c</h1><span class="" id="logo"><img class="h-8 w-8 mt-2 " src="images/logo.png" alt=""></span><h1 class="flex text-2xl mt-2 font-semibold uppercase">vid-19</h1></div> 
     <ul class="font-semibold capitalize text-black text-md hidden md:block">
-        <li class="float-right px-3  py-2">contacts</li>
+        <li class="float-right px-3  py-2"><a class="" href="contact.html">contacts</a></li>
         <li class="float-right px-3  py-2">statistics</li>
         <li class="float-right px-3  py-2">prevention</li>
         <li class="float-right px-3  py-2">home</li>
@@ -24,20 +25,70 @@
     </svg>    
 </nav>
 <nav id="nav2" class="w-2/3 h-full bg-gray-300 fixed top-0 z-20 md:w-1/5 md:hidden">
-    <div class="w-full  h-12 "></div>
-    <ul class="font-semibold text-center capitalize text-black text-2xl px-4 py-8 ">
-        <li class="py-4 hover:bg-red-100">contacts</li>
-        <li class="py-4 hover:bg-red-100">statistics</li>
-        <li class="py-4 hover:bg-red-100">prevention</li>
-        <li class="py-4 hover:bg-red-100">home</li>
-    </ul> 
+    <div class="w-full  h-12">
+    <svg id="off"class="float-right m-3 "height="15" width="15" viewbox="0 0 10 10">
+        <line x1="0" y1="0" x2="10" y2="10" stroke="#000" stroke-width="1"></line>
+        <line x1="10" y1="0" x2="0" y2="10" stroke="#000" stroke-width="1"></line>
+    </svg>
+    </div>
+    <ul class="font-semibold text-center capitalize text-black text-2xl px-4 py-12 ">
+        <li class="py-3 hover:bg-red-100">home</li>
+        <li class="py-3 hover:bg-red-100">prevention</li>
+        <li class="py-3 hover:bg-red-100">statistics</li>
+        <li class="py-3 hover:bg-red-100 "><a class="text-black" href="contact.html">contacts</a></li>
+     </ul> 
       
 </nav>
 
-<header>
-  
+<header class="">
+
+<div class="h-full w-full bg-black opacity-50">
+    <div id="">
+        <h1 class=" text-3xl pt-16 font-bold text-indigo-500 capitalize px-2 text-white">welcome
+            <div id="underline"></div>
+        </h1>  
+    <div id="tit" class="  flex text-2xl px-3 py-1 text-white capitalize  w-64"><h3 class="hidden" id="covid">Covid-19</h3><h3 class="bg-indigo-800 font-semibold hidden" id="records">|records</h3></div>
+    
+    </div>
+   <!--<div id="live_update" class="relative  md:hidden">
+   <div class="absolute h-32 w-48  my-16 mx-24 capitalize font-semibold ">
+    <h2 class="text-white absolute left-0 my-2 text-2xl ">live</h2>
+    <h1 class="text-white absolute right-0 my-12 text-3xl">update</h1> 
+   </div> 
+    <svg class=" absolute pr-8" viewbox="10 10 400 210">
+        <rect class="px-3" id="fillin" x=110 y=60 rx=30 stroke-width=3 height=150 width=260 stroke="#fff" fill=none></rect>
+    </svg>
+    
+</div>
+-->
+ 
+</div>
 </header>
-    <div id="state-show" class="w-full h-12 bg-gray-400 mt-24 flex justify-between md:w-3/4 md:m-auto md:mt-24 transition-5 " >
+<div class="w-full h-8 md:h-16 bg-red-500"></div>
+<!--description-->
+
+<p class="mt-32 md:text-2xl  px-4">
+    <strong class="capitalize text-2xl bold md:text-3xl">coronavirus</strong> are a group of related RNA viruses that cause diseases in mammals and birds. In humans, these viruses cause respiratory tract infections that can range from mild to lethal. Mild illnesses include some cases of the common cold (which is also caused by other viruses, predominantly rhinoviruses), while more lethal varieties can cause SARS, MERS, and COVID-19. Symptoms in other species vary: in chickens, they cause an upper respiratory tract disease, while in cows and pigs they cause diarrhea. There are as yet no vaccines or antiviral drugs to prevent or treat human coronavirus infections.
+
+    Coronaviruses constitute the subfamily Orthocoronavirinae, in the family Coronaviridae, order Nidovirales, and realm Riboviria.[6][7] They are enveloped viruses with a positive-sense single-stranded RNA genome and a nucleocapsid of helical symmetry.[8] The genome size of coronaviruses ranges from approximately 26 to 32 kilobases, one of the largest among RNA viruses.[9] They have characteristic club-shaped spikes that project from their surface, which in electron micrographs create an image reminiscent of the solar corona, from which their name derives
+       
+</p>
+
+<!--prevention-->
+<div class="text-center capitalize font-extrabold text-gray-700 text-3xl mt-10 md:mt-24 underline"><h1>here are the prevention steps </h1><h2>against covid-19 :</h2><img class="md:hidden" src="images/virus.png" alt=""></div>
+    
+<!--methods-->
+<div id="grid" class="grid grid-cols-1  md:grid-cols-3 gap-6 mt-10 md:mt-32">
+    <div class="box w-4/5 h-56 mx-auto px-12 bg-white shadow-2xl relative rounded-lg"><h1 class="absolute  text-sm ml-16 my-12 capitalize leading-tight">Regularly and thoroughly clean your hands with an alcohol-based hand rub or wash them with soap and water. Why? Washing your hands with soap and water or using alcohol-based hand rub kills viruses that may be on your hands</h1><div class=" h-full absolute top-0 left-0 w-24 bg-yellow-400"><img class="my-12 " src="images/hand-wash.png" alt=""><h1></h1></div></div>
+    <div class="box w-4/5 h-56 mx-auto px-12 bg-white shadow-2xl relative rounded-lg"><h1 class="absolute  text-sm ml-16 my-12 capitalize leading-tight">Wear a mask when physical distancing is not possible.<br><br>Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.</h1><div class=" h-full absolute top-0 left-0 w-24 bg-yellow-400"><img class="my-12 " src="images/mask.png" alt=""><h1></h1></div></div>
+    <div class="box w-4/5 h-56 mx-auto px-12 bg-white shadow-2xl relative rounded-lg"><h1 class="absolute  text-sm ml-16 my-8 capitalize leading-tight">Maintain at least 1 metre (3 feet) distance between yourself and others. Why? When someone coughs, sneezes, or speaks they spray small liquid droplets from their nose or mouth which may contain virus. If you are too close, you can breathe in the droplets, including the COVID-19 virus if the person has the disease.</h1><div class=" h-full absolute top-0 left-0 w-24 bg-yellow-400"><img class="my-12 " src="images/keep-distance.png" alt=""><h1></h1></div></div>
+    <div class="box w-4/5 h-56 mx-auto px-12 bg-white shadow-2xl relative rounded-lg"><h1 class="absolute  text-xs ml-16 my-2 capitalize leading-tight ">If you have a fever, cough and difficulty breathing, seek medical attention, but call by telephone in advance if possible and follow the directions of your local health authority. Why? National and local authorities will have the most up to date information on the situation in your area. Calling in advance will allow your health care provider to quickly direct you to the right health facility. This will also protect you and help prevent spread of viruses and other infections</h1><div class=" h-full absolute top-0 left-0 w-24 bg-yellow-400"><img class="my-12 " src="images/doctor.png" alt=""><h1></h1></div></div>
+    <div class="box w-4/5 h-56 mx-auto px-12 bg-white shadow-2xl relative rounded-lg"><h1 class="absolute  text-sm ml-16 my-8 capitalize leading-tight">Stay home and self-isolate even with minor symptoms such as cough, headache, mild fever, until you recover. Have someone bring you supplies. If you need to leave your house, wear a mask to avoid infecting others. Why? Avoiding contact with others will protect them from possible COVID-19 and other viruses.</h1><div class=" h-full absolute top-0 left-0 w-24 bg-yellow-400"><img class="my-12 " src="images/stay-home.png" alt=""><h1></h1></div></div>
+    <div class="box w-4/5 h-56 mx-auto px-12 bg-white shadow-2xl relative rounded-lg"><h1 class="absolute  text-sm ml-16 my-12 capitalize leading-tight">Avoid touching eyes, nose and mouth. Why? Hands touch many surfaces and can pick up viruses. Once contaminated, hands can transfer the virus to your eyes, nose or mouth. From there, the virus can enter your body and infect you</h1><div class=" h-full absolute top-0 left-0 w-24 bg-yellow-400"><img class="my-12 " src="images/no-touch.png" alt=""><h1></h1></div></div>
+
+</div>
+<!--states part-->
+<div id="state-show" class="w-full h-12 bg-gray-400 mt-24 flex justify-between md:w-3/4 md:m-auto md:mt-24 transition-5 md:shadow-lg shadow-md" >
     <h1 class='font-semibold text-2xl capitalize text ml-3 py-2 md:ml-5 ' draggable="true">Covid-19 india stats</h1>
     <div class=" w-6 h-6 relative mr-4 pt-1 md:mr-5">
     <img class="w-6 h-6 mt-2 mr-1 absolute" src="images/up-chevron.png" alt="">
@@ -45,10 +96,10 @@
     </div>
     
 </div>
-    <section id="state" class=" bg-gray-400 md:bg-transparent">
+    <section id="state" class=" bg-gray-400 md:mx-12 md:shadow-2xl pb-8 md:pb-16">
         <div id="input" class="flex justify-center p-4 mt-5 pointer">
-        <input class="bg-white focus:outline-none focus:border-blue-500 focus:border-2 border border-gray-300 py-2 px-4 block w-60 appearance-none leading-normal h-10" type="text" placeholder="Enter State">
-        <button class="bg-blue-500 outline-none hover:bg-blue-700 text-white font-bold py-2 px-4 h-10"> generate </button>   
+        <input class="bg-white focus:outline-none focus:border-blue-500 focus:border-2 border border-gray-300 py-2 px-3 block w-60 appearance-none leading-normal h-10" type="text" placeholder="Enter State">
+        <button class="bg-blue-500 outline-none hover:bg-blue-700 text-white font-bold py-2 px-3 h-10"> generate </button>   
         </div>
         <div class="w-full overflow-auto bg-gray-400 md:bg-transparent">   
         <table class="m-auto">
@@ -67,18 +118,18 @@
     </section>
 
     <!--world part-->
-    <div id="world-show" class="w-full h-12 bg-gray-400 mt-12 flex justify-between md:w-3/4 md:m-auto md:mt-24 transition-5" >
+    <div id="world-show" class="w-full h-12 bg-gray-400 mt-12 flex justify-between md:w-3/4 md:m-auto md:mt-24 transition-5 md:shadow-lg shadow-md" >
         <h1 class='font-semibold text-2xl capitalize text ml-3 py-2 md:ml-5' draggable="true">Covid-19 world stats</h1>
         <div class=" w-6 h-6 relative mr-4 pt-1 md:mr-5">
             <img class="w-6 h-6 mt-2 mr-1 absolute" src="images/up-chevron.png" alt="">
             <img class="w-6 h-6 mt-2 mr-1 absolute" src="images/down-arrow.png" alt="">
             </div>
         </div>
-        <section id="world" class="relative bg-gray-400 md:bg-transparent">
-            <div id="input1" class="flex justify-center p-4 mt-5 ">
-            <input class="bg-white focus:outline-none focus:border-blue-500 focus:border-2 border border-gray-300 py-2 px-4 block w-60 appearance-none leading-normal h-10" type="text" placeholder="Enter Country">
-            <button class="bg-blue-500 outline-none hover:bg-blue-700 text-white font-bold py-2 px-4 h-10"> generate </button>   
-            </div>
+        <section id="world" class="relative pb-8 bg-gray-400 md:mx-12 md:shadow-2xl pb-16">
+            <div id="input" class="flex justify-center p-4 mt-5 pointer">
+                <input class="bg-white focus:outline-none focus:border-blue-500 focus:border-2 border border-gray-300 py-2 px-3 block w-60 appearance-none leading-normal h-10" type="text" placeholder="Enter State">
+                <button class="bg-blue-500 outline-none hover:bg-blue-700 text-white font-bold py-2 px-3 h-10"> generate </button>   
+                </div>
             <div class="w-full overflow-auto bg-gray-400 md:bg-transparent">   
             <table class="m-auto">
             <thead class="md:text-2xl font-bold capitalize text-white text-center">
@@ -95,7 +146,41 @@
         </div>
         </section>
 
+        <!--comparision method-->
+        <div id="compare-states" class="w-full  h-12 bg-gray-400 mt-12 flex justify-between md:w-3/4 md:m-auto md:mt-24 transition-5 md:shadow-lg shadow-md" >
+            <h1 class='font-semibold text-2xl capitalize text ml-3 py-2 md:ml-5' draggable="true">Compare across states</h1>
+            <div class=" w-6 h-6 relative mr-4 pt-1 md:mr-5">
+                <img class="w-6 h-6 mt-2 mr-1 absolute" src="images/up-chevron.png" alt="">
+                <img class="w-6 h-6 mt-2 mr-1 absolute" src="images/down-arrow.png" alt="">
+                </div>
+            </div>
+            <section id="compare" class="relative pb-8 bg-gray-400 md:mx-12 md:shadow-2xl pb-16">
+                <div id="input2" class="md:flex justify-center p-4 mt-5 ">
+                <input class="bg-white focus:outline-none focus:border-blue-500 focus:border-2 border border-gray-300 py-2 px-3 block w-60 appearance-none leading-normal h-10" type="text" placeholder="Enter Country">
+                <input class="bg-white focus:outline-none focus:border-blue-500 my-4 focus:border-2 border border-gray-300 py-2 px-3 block w-60 appearance-none leading-normal h-10" type="text" placeholder="Enter Country">
+            </div>
+                <button class="bg-blue-500 outline-none hover:bg-blue-700 text-white font-bold py-2 px-3 h-10"> generate </button>   
+ 
+                <div class="w-full overflow-auto bg-gray-400 md:bg-transparent">   
+                <!--<table class="m-auto">
+                <thead class="md:text-2xl font-bold capitalize text-white text-center">
+                    <td class="text-white text-black px-3 " draggable="true">sl.no</td>
+                    <td class="text-white px-3 " draggable="true">country</td>
+                    <td class=" text-white px-3 " draggable="true">new cases</td>
+                    <td class=" text-white px-3" draggable="true">recovered</td>
+                    <td class=" text-white px-3" draggable="true">deaths</td>
+                    <td  class=" text-white px-3 border-b-2" draggable="true">total cases</td>
+                </thead>
+                <tbody id="tablebody1" class="text-md font-bold text-center">
+                </tbody>
+            </table>-->
+            </div>
+            </section>
 
+<footer class="h-32 md:h-40 w-full md:mt-32 mt-12 bg-blue-500 text-white ">
+<h1 class="text-lg text-center pt-4">follow us on</h1>
+
+</footer>
 <script src="index.js"></script>
 <script src="work.js"></script>    
 </body>

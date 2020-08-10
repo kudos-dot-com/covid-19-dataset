@@ -2,6 +2,39 @@
     padding:0;
     margin:0;
 }
+body{
+    background-color: #fff;
+}
+header{
+   width:100%;
+   height:500px ;
+    background-image: url(images/ngri.jpg) ;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+    box-shadow: inset 50px 150px 150px #000;
+   
+}
+#underline{
+    height: 3px;
+    width: 0px;
+    visibility: hidden;
+    background-color: #fff;
+    animation: underline 2s forwards ease-in-out 2s;
+}
+@keyframes underline{
+    to{
+        visibility: visible;
+        width: 130px;
+    }
+}
+/*input{
+    border-radius: 20px;
+    width:300px;
+}
+button{
+    border-radius: 20px;
+}*/
 #tablebody tr:nth-child(odd),#tablebody1 tr:nth-child(odd)
 {
     background-color:  #edf2f7;;
@@ -16,15 +49,18 @@
     margin: 5px;
    border: 1px solid #2c3e50;
 }
-
+#tablebody tr:hover{
+    background-color: #0984e3;
+}
 
 thead td{
     background-color: #2c3e50;;
+    cursor: no-drop;
 }
 input:focus{
     border: 2px solid;
 }
-#state-show,#world-show{
+#state-show,#world-show,#compare-states{
     border-radius: 20px;
 }
 #logo {
@@ -41,4 +77,16 @@ input:focus{
     to{
         transform: rotateZ(360deg);
     }
+}
+#grid:nth-child(even)
+{
+background-color: #dfe6e9;
+height:150px;
+width: 150px;
+}
+#nav2 a{
+    text-decoration: none;
+}
+.box{
+    box-sizing: border-box;
 }

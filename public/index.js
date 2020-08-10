@@ -23,9 +23,6 @@ if(url==="https://api.covid19api.com/summary")
 });
 dataset1(dataVal1);
 }
-
-
-
 }
 getData("https://api.covid19api.com/summary");
 
