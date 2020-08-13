@@ -7,5 +7,13 @@ still under development
  
  ![](public/images/github.png)
  
+ api used are as follows:
+ for world data:
+ 1.("https://api.covid19api.com/summary")
+ 
+ for states data
+2.("https://api.rootnet.in/covid19-in/stats/latest")
+
+
  
  
