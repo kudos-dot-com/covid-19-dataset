@@ -5,5 +5,7 @@ still under development
  2.chart.js for data visualization
  3.filterable tables 
  
+ ![](public/images/github.png)
+ 
  
  
