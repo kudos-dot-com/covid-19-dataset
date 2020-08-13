@@ -58,4 +58,8 @@ li{
     text-transform: capitalize;
     font-weight: bold;
     cursor: pointer;
+    
+}
+#home a{
+    text-decoration: none;
 }

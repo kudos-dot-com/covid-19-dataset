@@ -28,6 +28,7 @@ header{
         width: 130px;
     }
 }
+/*#90cdf4*/
 /*input{
     border-radius: 20px;
     width:300px;
@@ -44,12 +45,39 @@ button{
     background-color:#95a5a6; 
     /*#a0aec0;*/
 }
+#tablebody1 tr td:nth-child(3)
+{
+    color:red;
+   
+}
+#head{
+    visibility: hidden;
+}
+#tablebody1 tr td:nth-child(4)
+{
+    color:green;
+}
+#tablebody1 tr td:nth-child(5)
+{
+    color:red;
+}
+#tablebody tr td:nth-child(4)
+{
+    color:green;
+}
+#tablebody tr td:nth-child(5)
+{
+    color:red;
+}
+#nav1{
+    transition: 0.5s;
+}
 #tablebody td,#tablebody1 td
 {
     margin: 5px;
    border: 1px solid #2c3e50;
 }
-#tablebody tr:hover{
+#tablebody tr:hover,#tablebody1 tr:hover{
     background-color: #0984e3;
 }
 
@@ -68,6 +96,12 @@ input:focus{
     
     animation: round 2s infinite linear;
 
+}
+a{
+    text-decoration: none;
+}
+li{
+    cursor: pointer;
 }
 #nav2{
     transition: 1.2s;
@@ -90,3 +124,48 @@ width: 150px;
 .box{
     box-sizing: border-box;
 }
+#speech{
+    border-color:#fff;
+    outline: #fff;
+}
+#myChart,#myChart1{
+   background-color: #fff;
+}
+
+#chart,#chart1{
+    height:350px;
+}
+#slide{
+width:300px;
+margin: auto;
+margin-top: 50px;
+}
+#t1,#t2,#t3,#t4{
+    width:300px;
+}
+#side1{
+display: block;
+
+transform: rotate(-90deg);
+
+}
+#side2{
+    display: block;
+    
+    transform: rotate(-90deg);
+}
+#current ul{
+    left:50%;
+    bottom:30px;
+    transform: translateX(-50%);
+}
+#current ul li{
+background-color: tomato;
+}
+#inbox{
+    top:20%;
+    transform: translateY(-50%);
+}
+/*#slider{
+    transform: translateX(-300px);
+}*/
