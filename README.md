@@ -1,4 +1,5 @@
 # covid-19-dataset 
+New added 
 still under development
  features addes till now:
  1, speech synthesis
