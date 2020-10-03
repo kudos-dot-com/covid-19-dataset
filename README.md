@@ -15,6 +15,8 @@ still under development
  for states data
 2.("https://api.rootnet.in/covid19-in/stats/latest")
 
+website link :https://kudos-dot-com.github.io/covid-19-dataset/
+
 
  
  
