@@ -15,8 +15,10 @@ still under development
  for states data
 2.("https://api.rootnet.in/covid19-in/stats/latest")
 
+3. javascript inbuilt NLP feature used.
+
 website link :https://kudos-dot-com.github.io/covid-19-dataset/
 
-Firebase auth 
+ 
  
  
